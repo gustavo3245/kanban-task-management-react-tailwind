@@ -1,14 +1,15 @@
 {
   "boards": [
     {
-      "name": "Platform Launch",
+      "name": "Gerenciamento dos Projetos",
       "isActive" : false,
       "columns": [
         {
-          "name": "Todo",
+          "name": "Todos",
           "tasks": [
             {
-              "title": "Build UI for onboarding flow",
+              "title": "Titulo de Exemplo aqui",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -28,6 +29,7 @@
             },
             {
               "title": "Build UI for search",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -39,6 +41,7 @@
             },
             {
               "title": "Build settings UI",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -70,10 +73,11 @@
           ]
         },
         {
-          "name": "Doing",
+          "name": "Em Processo",
           "tasks": [
             {
               "title": "Design settings and search pages",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Doing",
               "subtasks": [
@@ -93,6 +97,7 @@
             },
             {
               "title": "Add account management endpoints",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Doing",
               "subtasks": [
@@ -112,6 +117,7 @@
             },
             {
               "title": "Design onboarding flow",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Doing",
               "subtasks": [
@@ -131,6 +137,7 @@
             },
             {
               "title": "Add search enpoints",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Doing",
               "subtasks": [
@@ -146,6 +153,7 @@
             },
             {
               "title": "Add authentication endpoints",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Doing",
               "subtasks": [
@@ -161,6 +169,7 @@
             },
             {
               "title": "Research pricing points of various competitors and trial different business models",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "We know what we're planning to build for version one. Now we need to finalise the first pricing model we'll use. Keep iterating the subtasks until we have a coherent proposition.",
               "status": "Doing",
               "subtasks": [
@@ -181,10 +190,11 @@
           ]
         },
         {
-          "name": "Done",
+          "name": "Concluído",
           "tasks": [
             {
               "title": "Conduct 5 wireframe tests",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "Ensure the layout continues to make sense and we have strong buy-in from potential users.",
               "status": "Done",
               "subtasks": [
@@ -196,6 +206,7 @@
             },
             {
               "title": "Create wireframe prototype",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "Create a greyscale clickable wireframe prototype to test our asssumptions so far.",
               "status": "Done",
               "subtasks": [
@@ -207,6 +218,7 @@
             },
             {
               "title": "Review results of usability tests and iterate",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "Keep iterating through the subtasks until we're clear on the core concepts for the app.",
               "status": "Done",
               "subtasks": [
@@ -226,6 +238,7 @@
             },
             {
               "title": "Create paper prototypes and conduct 10 usability tests with potential customers",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Done",
               "subtasks": [
@@ -241,6 +254,7 @@
             },
             {
               "title": "Market discovery",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "We need to define and refine our core product. Interviews will help us learn common pain points and help us define the strongest MVP.",
               "status": "Done",
               "subtasks": [
@@ -252,6 +266,7 @@
             },
             {
               "title": "Competitor analysis",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Done",
               "subtasks": [
@@ -267,6 +282,7 @@
             },
             {
               "title": "Research the market",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "We need to get a solid overview of the market to ensure we have up-to-date estimates of market size and demand.",
               "status": "Done",
               "subtasks": [
@@ -293,6 +309,7 @@
           "tasks": [
             {
               "title": "Plan Product Hunt launch",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "Todo",
               "subtasks": [
@@ -324,6 +341,7 @@
             },
             {
               "title": "Share on Show HN",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "",
               "subtasks": [
@@ -343,6 +361,7 @@
             },
             {
               "title": "Write launch article to publish on multiple channels",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "",
               "subtasks": [
@@ -385,6 +404,7 @@
           "tasks": [
             {
               "title": "Launch version one",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "",
               "status": "",
               "subtasks": [
@@ -400,6 +420,7 @@
             },
             {
               "title": "Review early feedback and plan next steps for roadmap",
+              "subtitle": "Lorem Ipsum dolor sit amet...",
               "description": "Beyond the initial launch, we're keeping the initial roadmap completely empty. This meeting will help us plan out our next steps based on actual customer feedback.",
               "status": "",
               "subtasks": [

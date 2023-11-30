@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo-mobile.svg";
+import logomov from "../assets/logomov.png";
 import iconDown from "../assets/icon-chevron-down.svg";
 import iconUp from "../assets/icon-chevron-up.svg";
 import elipsis from "../assets/icon-vertical-ellipsis.svg";
@@ -53,12 +54,11 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
       <header className=" flex justify-between dark:text-white items-center  ">
         {/* Left Side  */}
         <div className=" flex items-center space-x-2  md:space-x-4">
-          <img src={Logo} alt=" Logo " className=" h-6 w-6" />
-          <h3 className=" md:text-4xl  hidden md:inline-block font-bold  font-sans">
-            kanban
-          </h3>
+          <img src={logomov} alt=" Logo " className=" h-10 w-48" />
           <div className=" flex items-center ">
-            <h3 className=" truncate max-w-[200px] md:text-2xl text-xl font-bold md:ml-20 font-sans  ">
+
+            <h3 className="font-inter md:text-2xl text-xl font-bold md:ml-20 ">
+              <div className="w-10 h-1 bg-blue-600 rounded-3xl mb-2"/>
               {board.name}
             </h3>
             <img
@@ -69,46 +69,6 @@ function Header({ setIsBoardModalOpen, isBoardModalOpen }) {
             />
           </div>
         </div>
-
-        {/* Right Side */}
-
-        <div className=" flex space-x-4 items-center md:space-x-6 ">
-          <button
-            className=" button hidden md:block "
-            onClick={() => {
-              setIsTaskModalOpen((prevState) => !prevState);
-            }}
-          >
-            + Add New Task
-          </button>
-          <button
-            onClick={() => {
-              setIsTaskModalOpen((prevState) => !prevState);
-            }}
-            className=" button py-1 px-3 md:hidden "
-          >
-            +
-          </button>
-
-          <img
-            onClick={() => {
-              setBoardType("edit");
-              setOpenDropdown(false)
-              setIsElipsisMenuOpen((prevState) => !prevState);
-            }}
-            src={elipsis}
-            alt="elipsis"
-            className=" cursor-pointer h-6"
-          />
-          {isElipsisMenuOpen && (
-            <ElipsisMenu
-              type="Boards"
-              setOpenEditModal={setOpenEditModal}
-              setOpenDeleteModal={setOpenDeleteModal}
-            />
-          )}
-        </div>
-
         {openDropdown && (
           <HeaderDropDown
             setOpenDropdown={setOpenDropdown}

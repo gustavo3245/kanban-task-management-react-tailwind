@@ -77,18 +77,18 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
         className=" scrollbar-hide overflow-y-scroll max-h-[95vh]  bg-white dark:bg-[#2b2c37] text-black dark:text-white font-bold
        shadow-md shadow-[#364e7e1a] max-w-md mx-auto my-auto w-full px-8  py-8 rounded-xl"
       >
-        <h3 className=" text-lg ">
+        <h3 className=" text-lg font-inter">
           {type === "edit" ? "Edit" : "Add New"} Board
         </h3>
 
         {/* Task Name */}
 
         <div className="mt-8 flex flex-col space-y-1">
-          <label className="  text-sm dark:text-white text-gray-500">
+          <label className="font-inter text-sm dark:text-white text-gray-500">
             Board Name
           </label>
           <input
-            className=" bg-transparent  px-4 py-2 rounded-md text-sm  border-[0.5px] border-gray-600 focus:outline-[#635fc7] outline-1  ring-0  "
+            className="font-inter bg-transparent text-gray-600 px-4 py-2 rounded-md text-sm  border-[0.5px] border-gray-300 focus:outline-[#635fc7] outline-1  ring-0  "
             placeholder=" e.g Web Design"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -99,14 +99,14 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
         {/* Board Columns */}
 
         <div className="mt-8 flex flex-col space-y-3">
-          <label className=" text-sm dark:text-white text-gray-500">
+          <label className="font-inter text-sm dark:text-white text-gray-500">
             Board Columns
           </label>
 
           {newColumns.map((column, index) => (
             <div key={index} className=" flex items-center w-full ">
               <input
-                className=" bg-transparent flex-grow px-4 py-2 rounded-md text-sm  border-[0.5px] border-gray-600 focus:outline-[#635fc7] outline-[1px]  "
+                className="font-inter bg-transparent text-gray-600 flex-grow px-4 py-2 rounded-md text-sm  border-[0.5px] border-gray-300 focus:outline-[#635fc7] outline-[1px]  "
                 onChange={(e) => {
                   onChange(column.id, e.target.value);
                 }}
@@ -124,7 +124,7 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
           ))}
           <div>
             <button
-              className=" w-full items-center hover:opacity-70 dark:text-[#635fc7] dark:bg-white  text-white bg-[#635fc7] py-2 rounded-full "
+              className="font-inter w-full items-center hover:opacity-70 dark:text-[#635fc7] dark:bg-white  text-white bg-blue-600 py-2 rounded-xl mt-4"
               onClick={() => {
                 setNewColumns((state) => [
                   ...state,
@@ -132,16 +132,16 @@ function AddEditBoardModal({ setIsBoardModalOpen, type , }) {
                 ]);
               }}
             >
-              + Add New Column
+              + Adicionar nova coluna
             </button>
             <button
               onClick={() => {
                 const isValid = validate();
                 if (isValid === true) onSubmit(type);
               }}
-              className=" w-full items-center hover:opacity-70 dark:text-white dark:bg-[#635fc7] mt-8 relative  text-white bg-[#635fc7] py-2 rounded-full"
+              className="font-inter w-full items-center hover:opacity-70 dark:text-white dark:bg-[#635fc7] mt-3 relative text-white bg-green-500 py-2 rounded-xl"
             >
-              {type === "add" ? "Create New Board" : "Save Changes"}
+              {type === "add" ? "Criar novo quadro" : "Salvar Alterações"}
             </button>
           </div>
         </div>
